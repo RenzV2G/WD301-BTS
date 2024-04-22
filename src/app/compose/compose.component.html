@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="heading">Share your Story</div>
+  <form method="post">
+      <input id="newEntry" name="title" placeholder="Title:" required><br>
+      <input id="newWarning" name="warning" placeholder="Trigger Warning:" required><br>
+      <textarea id="newExperience" name="experience" placeholder="Experience:" rows="5" required></textarea><br>
+      <textarea id="newResolve" name="resolve" placeholder="How you resolve it:" rows="5" required></textarea><br>
+      <textarea id="newAdvice" name="advice" placeholder="Advice for other people:" rows="5" required></textarea><br>
+      <input (click)="addEntry()" type="submit" value="Submit">
+  </form>
+</div>

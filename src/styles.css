@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#0E0548, #FEBE8D);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: auto; /* Sets the height of the background to cover the entire viewport */
+    font-family: Bowtaris;
+}
+

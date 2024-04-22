@@ -1,0 +1,24 @@
+<!-- <div class="container">
+    <div class="heading">Edit your Story</div>
+    <form *ngFor="let en of entry">
+        <input id="newEntry" name="title" placeholder="Title:" value="{{ en.title.id }}"><br>
+        <input id="newWarning" name="warning" placeholder="Trigger Warning:" value="{{ en.warning.id }}" required><br>
+        <textarea id="newExperience" name="experience" placeholder="Experience:" value="{{ en.experience.id }}" rows="5" required></textarea><br>
+        <textarea id="newResolve" name="resolve" placeholder="How you resolve it:" value="{{ en.resolve.id }}" rows="5" required></textarea><br>
+        <textarea id="newAdvice" name="advice" placeholder="Advice for other people:" value="{{ en.advice.id }}" rows="5" required></textarea><br>
+        <input type="submit" (submit)="addEntry()" value="Submit">
+    </form>
+</div> -->
+<div class="container">
+    <div class="heading">Edit your Story</div>
+    <form (ngSubmit)="editEntry()">
+        
+        <input id="newEntry" [(ngModel)]="entry.title" name="title" placeholder="Title:" required><br>
+        <input id="newWarning" [(ngModel)]="entry.warning" name="warning" placeholder="Trigger Warning:" required><br>
+        <textarea [(ngModel)]="entry.experience" name="experience" placeholder="Experience:" rows="5" required></textarea><br>
+        <textarea [(ngModel)]="entry.resolve" name="resolve" placeholder="How you resolve it:" rows="5" required></textarea><br>
+        <textarea [(ngModel)]="entry.advice" name="advice" placeholder="Advice for other people:" rows="5" required></textarea><br>
+        <input type="submit" value="Update">
+    </form>
+</div>
+

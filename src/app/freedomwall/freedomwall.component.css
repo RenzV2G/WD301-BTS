@@ -1,0 +1,136 @@
+@font-face { font-family: Bowtaris; src: url(../fonts/Bowtaris.ttf);}
+
+h1 {
+    font-size: 80px;
+    margin-top: 30px;
+    color: #FEBE8D;
+    font-weight: lighter;
+    line-height: 150px;
+    text-align: center;
+    font-family: Bowtaris;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px; */
+    font-family: Bowtaris;
+    margin: 0 25%;
+    background-color: #493760;
+    height: 80px;
+    border-radius: 50px;
+  }
+
+.search-container input[type="text"] {
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+    color: white;
+    font-family: Bowtaris;
+    border: white 2px solid;
+    background-color: transparent;
+    font-size: 30px;
+    height: 25px;
+    width: 78%;
+}
+.search-container input[type="text"]::placeholder{
+    color: rgba(255,255,255, 0.8);
+    
+}
+
+.search-container button {
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Center the icon vertically */
+    border: white 2px solid;
+    width: 10%;
+    height: 50px;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.search-container button mat-icon {
+    margin-right: 5px; /* Add some spacing between icon and button text */
+    scale: 1.5;
+
+}
+
+.search-container button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #493760;
+    transition: all 0.5s ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+input[type="text"]:focus {
+    outline: none; 
+}
+
+.example-card {
+    position: relative; /* Set the position of the card to relative */
+    width: 70%;
+    margin: 25px auto 0 auto;
+    background-image: linear-gradient(#493760, #dfad88);
+    color: white;
+    border-radius: 30px;
+    box-shadow: none;
+    font-family: Bowtaris, sans-serif;
+    padding: 20px;
+}
+
+mat-card-header, mat-card-content{
+    text-align: justify;
+    font-family: Bowtaris, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+mat-card-actions{
+    text-align: right;
+}
+mat-card-title {
+    font-family: Bowtaris;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.mat-card-header {
+    position: relative; /* Set the position of the header to relative */
+}
+
+.upper-right-text {
+    position: absolute; /* Set the position of the text to absolute */
+    top: 2; /* Align text to the top */
+    right: 0;
+    margin-right: 40px;
+}
+
+mat-card-actions button{
+    border-radius: 15px;
+    /* border: white 1.5px solid; */
+    background-color: rgba(73,55,96, 0.3);
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px 30px;
+    color: white;
+    font-family: Bowtaris;
+    font-size: 20px;
+}
+  
+.custom-alert {
+    background-color: #f44336; /* Red background color */
+    color: white; /* White text color */
+    padding: 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* Position it 30px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+  }
+  
